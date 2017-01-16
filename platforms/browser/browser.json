@@ -1,0 +1,61 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Checkout\"><param name=\"browser-package\" value=\"Checkout\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.techfancier.dating"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.techfancier.dating"
+        },
+        "com.razorpay.cordova": {
+            "PACKAGE_NAME": "com.techfancier.dating"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+            "id": "cordova-sqlite-storage.SQLitePlugin",
+            "pluginId": "cordova-sqlite-storage",
+            "clobbers": [
+                "SQLitePlugin"
+            ]
+        },
+        {
+            "file": "plugins/com.razorpay.cordova/www/RazorpayCheckout.js",
+            "id": "com.razorpay.cordova.RazorpayCheckout",
+            "pluginId": "com.razorpay.cordova",
+            "clobbers": [
+                "RazorpayCheckout"
+            ]
+        },
+        {
+            "file": "plugins/com.razorpay.cordova/src/browser/CheckoutProxy.js",
+            "id": "com.razorpay.cordova.CheckoutProxy",
+            "pluginId": "com.razorpay.cordova",
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.1",
+        "cordova-sqlite-storage": "2.0.1",
+        "com.razorpay.cordova": "0.13.1"
+    }
+}

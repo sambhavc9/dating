@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="in.friendzzz" version="3.03.10" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Checkout">
+        <param name="browser-package" value="Checkout" />
+    </feature>
+    <name>FRIENDZZZ</name>
+    <description>
+        APPLICATION FOR DATING AND SOCIAL ACTIVITY   
+    </description>
+    <author email="business@techfancier.com" href="http://techfancier.com">
+        Apache Cordova Team
+    </author>
+    <access origin="*" />
+    <content src="index.html" />
+    <allow-navigation href="*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <access origin="https://*.razorpay.com/*" />
+</widget>
